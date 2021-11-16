@@ -42,6 +42,7 @@ Responsável por renderizar uma listra branca no chão que representa a linha de
 ### gamedata.cpp
 Por ser um jogo, esse projeto reutiliza o arquivo gamedata.cpp do asteroids que define estados do jogo como "Playing", "GameOver" e "Win".
 
+###
 O resultado final é uma versão que lembra bastante o episódio da série numa versão reduzida em uma espécie de sala no espaço do ?mundo. A classe openglwindow.cpp, além de gerenciar instâncias das outras classas, também usa a função PaintUI() para exibir as mensagens do jogo na tela e o status de 'Green Ligth - Red Light' numa fonte de tamanho e cores personalizados.
 
 Imagem aqui.
