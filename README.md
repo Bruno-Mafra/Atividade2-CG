@@ -19,7 +19,8 @@ Para compilar o código-fonte disponibilizado nesse repositório diretamente no 
 
 O cenário é constituido por varios objetos 3D (arquivos .obj). Cada um dos diferentes objetos é lido por uma classe específica também responsável por gerar seus respectivos VBO's e VAO's. A classe openglwindow.cpp gerencia uma instância dessas demais classes que compõem o cenário. Alguns dos objetos 3D foram obtidos online em algum formato de arquivo 3D qualquer e posteriormente convertidos para o formato .obj com o software blender.
 
-Faltou falar da camera e perspectiva******************************
+### camera.cpp
+A visão da camera no jogo é em primeira pessoa e a posição da câmera no espaço do mundo representa a posição de um observador nesse espaço. Para esa representação a projeção perspectiva é bastante adequada. Os parâmetros da matriz de projeção são semelhantes aos vistos em aula, o volume de visão precisou ser aumentado para que todo o conteúdo da cena pudesse aparecer adequadamente sem ser cortado. Essa classe também é responsável pela colisão com as paredes, impedindo que o observador (câmera LookAt) "saia para fora" do espaço delimitado pela sala, e por impedir a movimentação quando o jogador for eliminado.
 
 ### boneca.cpp
 Responsável por ler o .obj da boneca de Round 6, essa classe também faz todo o controle do comportamento da boneca através do método update(). A boneca deve girar em 180 graus em torno do eixo Y (equivale a estar para frente ou para trás) por uma quantidade aleatoria de tempo definida por uma função estilo random.
@@ -34,7 +35,7 @@ Responsável por ler o .obj do soldados que aparecem em Round 6, assim como na s
 Responsável por ler o .obj de bonecos que representam os jogadores. Esses bonecos na verdade são do jogo 'Among Us', mas combinam com os outros elementos no estilo chibi/cartoonizado, fazendo mais sentido que um modelo de humano. Esses bonecos tem as cores do uniforme dos jogadores na série e aparecem em grande quantidade no cenário.
 
 ### ground.cpp e walls.cpp
-Responsável por ler o .obj do chão e das paredes do cenário respectivamente. Esses objetos 3D foram criados por mim no software 'blender' e representam estruturas simples, são como faces recortadas de um cubo unitário. Apesar de serem apenas faces (são como folhas de papel no cenário 3D), optei por representar atráves de arquivos .obj já pensando no projeto 3 e em uma possível adição de texturas.
+Responsável por ler o .obj do chão e das paredes do cenário respectivamente. Esses objetos 3D foram criados por mim no software 'blender' e representam estruturas simples, são como faces recortadas de um cubo unitário. Apesar de serem apenas faces (são como folhas de papel no cenário 3D), optei por representar atráves de arquivos .obj pensando no projeto 3 e em uma possível adição de texturas.
 
 ### listra.cpp
 Responsável por renderizar uma listra branca no chão que representa a linha de chegada. Por ser muito simples não necessita de ler um arquivo .obj.
@@ -44,7 +45,7 @@ Por ser um jogo, esse projeto reutiliza o arquivo gamedata.cpp do asteroids que 
 
 ---
 
-O resultado final é uma versão que lembra bastante o episódio da série numa versão reduzida em uma espécie de sala no espaço do ?mundo. A classe openglwindow.cpp, além de gerenciar instâncias das outras classas, também usa a função PaintUI() para exibir as mensagens do jogo na tela e o status de 'Green Ligth - Red Light' numa fonte de tamanho e cores personalizados.
+O resultado final é uma versão que lembra bastante o episódio da série numa versão reduzida em uma espécie de sala no "espaço do mundo". A classe openglwindow.cpp, além de gerenciar instâncias das outras classas, também usa a função PaintUI() para exibir as mensagens do jogo na tela e o status de 'Green Ligth - Red Light' numa fonte de tamanho e cores personalizados.
 
 ![result](https://user-images.githubusercontent.com/74402232/142194124-ab5329fd-f30e-4813-8dd6-80d04c8eef23.png)
 
