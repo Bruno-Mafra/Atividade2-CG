@@ -46,7 +46,8 @@ Por ser um jogo, esse projeto reutiliza o arquivo gamedata.cpp do asteroids que 
 
 O resultado final é uma versão que lembra bastante o episódio da série numa versão reduzida em uma espécie de sala no espaço do ?mundo. A classe openglwindow.cpp, além de gerenciar instâncias das outras classas, também usa a função PaintUI() para exibir as mensagens do jogo na tela e o status de 'Green Ligth - Red Light' numa fonte de tamanho e cores personalizados.
 
-Imagem aqui.
+![result](https://user-images.githubusercontent.com/74402232/142194124-ab5329fd-f30e-4813-8dd6-80d04c8eef23.png)
+
 
 **Obs:** Todas as classes que renderizam arquivos .obj também são responsáveis pela atribuição de cores e por aplicar matrizes de transformação nos elementos da cena como posição, rotação e escala.
 
