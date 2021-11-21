@@ -53,8 +53,19 @@ O resultado final é uma versão que lembra bastante o episódio da série numa 
 **Obs:** Todas as classes que renderizam arquivos .obj também são responsáveis pela atribuição de cores e por aplicar matrizes de transformação nos elementos da cena como posição, rotação e escala.
 
 ---
+## Fonte dos Modelos
+A partir desses links é possível visualizar e baixar os modelos 3D usados nesse projeto, são todos gratuitos ou para uso não comercial.
 
-Mais detalhes podem ser obtidos acessando o código-fonte.
+[Link do modelo 3D da boneca](https://sketchfab.com/3d-models/squid-game-doll-ccfed977f35446a7914a3abc5e393182)
+
+[Link do modelo 3D da árvore](https://sketchfab.com/3d-models/tree-a2a6237a270840e198cc7db1c47f1ef7)
+
+[Link do modelo 3D do soldado](https://sketchfab.com/3d-models/squid-game-pinksoldier-8f6112f88ea743e8a468ac017bb2c0e2)
+
+[Link do modelo 3D do boneco (Among Us)](https://sketchfab.com/3d-models/among-us-obj-5254d257fac74e28aa1455a368481279)
+
+---
+Mais detalhes sobre a aplicação podem ser obtidos acessando o código-fonte.
 
 ---
 
